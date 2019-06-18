@@ -14,14 +14,14 @@ spec:
         name: micro-proxy
     spec:
       containers:
-      - name: proxy
-        env:
-        - name: MICRO_ENABLE_STATS
-          value: "true"
-        args:
-        - proxy
-        image: microhq/micro:kubernetes
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 8081
-          name: proxy-port
+        - name: proxy
+          env:
+            - name: MICRO_ENABLE_STATS
+              value: "true"
+          args:
+            - proxy
+          image: saaskit/micro:kubernetes
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8081
+              name: proxy-port

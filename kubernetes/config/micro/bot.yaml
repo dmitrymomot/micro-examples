@@ -15,11 +15,12 @@ spec:
     spec:
       containers:
         - name: bot
-          command: [
-            "/micro",
-            "bot",
-            "--inputs=slack",
-            "--slack_token=YOUR_SLACK_TOKEN"
-          ]
-          image: microhq/micro:bot
+          command:
+            [
+              "/micro",
+              "bot",
+              "--inputs=slack",
+              "--slack_token=YOUR_SLACK_TOKEN",
+            ]
+          image: saaskit/micro:kubernetes
           imagePullPolicy: Always

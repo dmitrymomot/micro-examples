@@ -23,8 +23,11 @@ require (
 	github.com/nu7hatch/gouuid v0.0.0-20131221200532-179d4d0c4d8d
 	github.com/pborman/uuid v1.2.0
 	github.com/vektah/gqlparser v1.1.0
-	golang.org/x/net v0.0.0-20190125091013-d26f9f9a57f3
+	golang.org/x/net v0.0.0-20190206173232-65e2d4e15006
 	google.golang.org/genproto v0.0.0-20190128161407-8ac453e89fca
 	google.golang.org/grpc v1.18.0
 	gopkg.in/go-playground/validator.v8 v8.18.2 // indirect
+	k8s.io/api v0.0.0-20190615205754-1d1b8b084b30 // indirect
+	k8s.io/client-go v11.0.0+incompatible // indirect
+	k8s.io/utils v0.0.0-20190607212802-c55fbcfc754a // indirect
 )

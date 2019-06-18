@@ -7,9 +7,9 @@ metadata:
     name: micro-web
 spec:
   ports:
-  - name: http
-    port: 80
-    targetPort: 8082
+    - name: http
+      port: 80
+      targetPort: 8082
   selector:
     name: micro-web
   type: LoadBalancer

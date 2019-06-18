@@ -15,11 +15,9 @@ spec:
     spec:
       containers:
         - name: greeter-web
-          command: [
-		    "/greeter-web"
-          ]
+          command: ["/greeter-web"]
           image: microhq/greeter-web:kubernetes
           imagePullPolicy: Always
           ports:
-          - containerPort: 9090
-            name: web-port
+            - containerPort: 9090
+              name: web-port

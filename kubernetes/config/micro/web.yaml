@@ -14,14 +14,14 @@ spec:
         name: micro-web
     spec:
       containers:
-      - name: web
-        env:
-        - name: MICRO_ENABLE_STATS
-          value: "true"
-        args:
-        - web
-        image: microhq/micro:kubernetes
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 8082
-          name: web-port
+        - name: web
+          env:
+            - name: MICRO_ENABLE_STATS
+              value: "true"
+          args:
+            - web
+          image: saaskit/micro:kubernetes
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8082
+              name: web-port
