@@ -11,8 +11,9 @@ import (
 )
 
 func init() {
-	web.Register(index.NewPlugin())
 	api.Register(rpc.NewPlugin())
 	api.Register(cors.NewPlugin())
+	api.Register(index.NewPlugin())
+	web.Register(index.NewPlugin())
 	plugin.Register(stats_auth.NewPlugin())
 }
